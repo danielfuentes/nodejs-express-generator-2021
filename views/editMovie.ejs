@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+  <%-include('./partials/head.ejs') %> 
+  <body>
+    <main class="container-fluid">
+      <%-include('./partials/header.ejs') %>
+      <section class="row">
+        <article class="col-12 col-md-6 m-auto">
+            <h1 class="text-center pt-1">Actualizar la película</h1>
+            <form action="/movies/update/<%= Movie.id %>" method="POST">
+              <div class="mb-3">
+                <label for="title" class="form-label">Titulo de la película</label>
+                <input type="text" name="title" id="" value="<%= Movie.title %>" required>
+              </div>
+              <div class="mb-3">
+                <label for="rating" class="form-label">Calificación</label>
+                <input type="number" name="rating" id="" value="<%= Movie.rating %>" required>
+              </div>
+              <div class="mb-3">
+                <label for="awards" class="form-label">Premios</label>
+                <input type="number" name="awards" id="" value="<%= Movie.awards %>" required>
+              </div>
+              <div class="mb-3">
+                <label for="length" class="form-label">Duración</label>
+                <input type="number" name="length" id="" value="<%= Movie.length %>" required>
+              </div>
+              <div class="mb-3">
+                <label for="genre" class="form-label">Género</label>
+                <select name="genre_id" id="" required>
+                  <% allGenres.forEach(genre => { %>
+                  <option value="<%= genre.id %>" <% if (Movie.genre.id == genre.id) { %><%= 'selected' %><% }; %>><%= genre.name %></option>
+                  <% }); %>
+                </select>
+              </div>
+              <br>
+              <p> <button class="btn btn-success" type="submit">Actualizar</button>
+          
+              <a  class="btn btn-danger" href="/movies">Listado de Películas</a></p>
+          </form>
+        </article>
+    </section>
+</main>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    -->
+
+</body>
+</html>
