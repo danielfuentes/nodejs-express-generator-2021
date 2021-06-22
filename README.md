@@ -1,11 +1,11 @@
 <h1>Proyecto desarrollado con:  NodeJS  y Express-Generator </h1>
-<p>Proyecto académico donde se puede verificar la realización de una página web my sencilla usando HTML - CSS - Bootstrap y  ademas se usanron diversos 
+<p>Proyecto académico donde se puede verificar la realización de una página web muy sencilla usando HTML - CSS - Bootstrap y  ademas diversos 
 paquetes de NodeJS como lo son: </p>
 <ul>
    <li>bcryptjs</li>
    <li>cookie-parser</li>
    <li>debug</li>
-   <li>ejs</li
+   <li>ejs</li>
    <li>express</li>
    <li>express-session</li>
    <li>http-errors</li>
@@ -21,5 +21,5 @@ paquetes de NodeJS como lo son: </p>
    <li>ejecutar el comando: <strong>nodemon </strong> </li>
    <li>Finalmente debe ingresar a su navegador (Browser) y escribir: <strong> localhost:3000</strong> </li>
 </ul>
-<p>En la base de datos ya se encuntra creado un usuario y además posee el perfil o role de Administrador  <strong> role = 9/strong>   </p>
+<p>En la base de datos ya se encuntra creado un usuario y además posee el perfil o role de Administrador  <strong> role = 9 </strong>   </p>
 <h4>Espero que resulte de utilidad...</h4>
