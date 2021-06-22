@@ -22,4 +22,5 @@ paquetes de NodeJS como lo son: </p>
    <li>Finalmente debe ingresar a su navegador (Browser) y escribir: <strong> localhost:3000</strong> </li>
 </ul>
 <p>En la base de datos ya se encuntra creado un usuario y además posee el perfil o role de Administrador  <strong> role = 9 </strong>   </p>
+
 <h4>Espero que resulte de utilidad...</h4>
